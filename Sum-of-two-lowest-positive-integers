@@ -1,0 +1,10 @@
+function sumTwoSmallestNumbers(numbers) {  
+// Sort array with comparison function
+  function compare (a, b) {
+  return a-b;
+  }
+  // Sorting
+  numbers.sort(compare);
+  // Sum first two entries
+  return numbers[0]+numbers[1];
+};
